@@ -1,6 +1,6 @@
 {
-	"id": "minimalism-challenge",
-	"name": "Minimalism Challenge",
+	"id": "minimalism-challenge-calendar",
+	"name": "Minimalism Challenge Calendar",
 	"version": "1.0.0",
 	"minAppVersion": "0.15.0",
 	"description": "极简主义挑战日历，帮助用户记录和管理极简主义挑战",
