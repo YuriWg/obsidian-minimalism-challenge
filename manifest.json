@@ -1,9 +1,9 @@
 {
 	"id": "minimalism-challenge-calendar",
 	"name": "Minimalism Challenge Calendar",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"minAppVersion": "0.15.0",
-	"description": "极简主义挑战日历，帮助用户记录和管理极简主义挑战",
+	"description": "A plugin to help users undertake a 30-day minimalism challenge, recording and assessing the value of their possessions.",
 	"author": "YuriWg",
 	"authorUrl": "https://github.com/YuriWg",
 	"isDesktopOnly": false
