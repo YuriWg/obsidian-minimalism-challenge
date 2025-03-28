@@ -1,0 +1,10 @@
+{
+  "id": "minimalism-challenge",
+  "name": "极简主义挑战",
+  "version": "1.0.0",
+  "minAppVersion": "0.15.0",
+  "description": "一个帮助记录和管理极简主义挑战的插件",
+  "author": "Your Name",
+  "authorUrl": "",
+  "isDesktopOnly": false
+}
