@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>极简主义挑战插件</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="obsidian-container">
+        <div class="sidebar">
+            <div class="plugin-header">
+                <h2>极简主义挑战</h2>
+            </div>
+            <div class="settings-panel">
+                <div class="setting-item">
+                    <label>挑战持续时间（天）</label>
+                    <input type="number" id="duration" value="30" min="1" max="365">
+                </div>
+                <div class="setting-item">
+                    <label>物品数量限制</label>
+                    <input type="number" id="itemLimit" value="100" min="1" max="1000">
+                </div>
+                <button id="startChallenge" class="primary-btn">开始挑战</button>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="status-bar">
+                <span id="challengeStatus">未开始挑战</span>
+                <span id="timer"></span>
+            </div>
+            <div class="items-container">
+                <h3>物品清单</h3>
+                <div class="item-list">
+                    <div class="item-input">
+                        <input type="text" id="newItem" placeholder="添加新物品">
+                        <button id="addItem">添加</button>
+                    </div>
+                    <ul id="itemsList"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
