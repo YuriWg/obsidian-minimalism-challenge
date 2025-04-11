@@ -9,33 +9,103 @@
 </head>
 <body>
     <div class="plugin-showcase">
-        <div class="plugin-header">
-            <h1>极简主义挑战插件</h1>
-        </div>
-        <div class="plugin-content">
-            <div class="demo-container">
-                <div class="settings-panel">
-                    <div class="setting-item">
-                        <label>挑战持续时间（天）</label>
-                        <input type="number" id="duration" value="30" min="1">
-                    </div>
-                    <div class="setting-item">
-                        <label>物品数量限制</label>
-                        <input type="number" id="itemLimit" value="100" min="1">
-                    </div>
-                    <button id="startChallenge">开始挑战</button>
-                </div>
-                <div class="challenge-status">
-                    <span id="status">未开始</span>
-                    <span id="timer"></span>
-                </div>
-                <div class="items-list">
-                    <input type="text" id="newItem" placeholder="添加新物品">
-                    <button id="addItem">添加</button>
-                    <ul id="itemsList"></ul>
+        <header class="plugin-header">
+            <h1>极简主义挑战</h1>
+            <p class="plugin-description">一个帮助你实践极简主义的 Obsidian 插件</p>
+        </header>
+
+        <section class="plugin-preview">
+            <div class="preview-container">
+                <img src="images/preview.gif" alt="插件预览" class="preview-image">
+                <div class="preview-overlay">
+                    <h2>主要功能</h2>
+                    <ul>
+                        <li>📅 30天极简主义挑战追踪</li>
+                        <li>📊 物品评分系统</li>
+                        <li>🗂️ 智能分类管理</li>
+                        <li>📈 进度可视化</li>
+                        <li>📝 物品记忆与告别</li>
+                    </ul>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <section class="plugin-features">
+            <div class="feature-card">
+                <h3>物品分类</h3>
+                <div class="category-list">
+                    <span class="category" style="background: #B4846C">🧣 衣物</span>
+                    <span class="category" style="background: #A7B89D">🧴 日用品</span>
+                    <span class="category" style="background: #E1A692">🍕 食物</span>
+                    <span class="category" style="background: #7895B2">📱 电子产品</span>
+                    <span class="category" style="background: #BBAB8C">✏️ 文具</span>
+                    <span class="category" style="background: #E5BA73">📖 书籍</span>
+                    <span class="category" style="background: #C17C74">🎀 装饰品</span>
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <h3>评分系统</h3>
+                <div class="score-list">
+                    <div class="score-item">
+                        <span class="score-label">🔄 使用频率</span>
+                        <span class="score-weight">0.8</span>
+                    </div>
+                    <div class="score-item">
+                        <span class="score-label">⭐ 必要性</span>
+                        <span class="score-weight">0.9</span>
+                    </div>
+                    <div class="score-item">
+                        <span class="score-label">🔒 不可替代性</span>
+                        <span class="score-weight">0.7</span>
+                    </div>
+                    <div class="score-item">
+                        <span class="score-label">📦 空间负担</span>
+                        <span class="score-weight">0.6</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <h3>处理建议</h3>
+                <div class="disposal-list">
+                    <div class="disposal-item">
+                        <span>🗑️ 立即处理</span>
+                        <span class="score-range">0-19</span>
+                    </div>
+                    <div class="disposal-item">
+                        <span>📤 推荐舍弃</span>
+                        <span class="score-range">20-39</span>
+                    </div>
+                    <div class="disposal-item">
+                        <span>🔄 灵活处理</span>
+                        <span class="score-range">40-59</span>
+                    </div>
+                    <div class="disposal-item">
+                        <span>📥 建议保留</span>
+                        <span class="score-range">60-79</span>
+                    </div>
+                    <div class="disposal-item">
+                        <span>📦 必须保留</span>
+                        <span class="score-range">80-100</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="plugin-installation">
+            <h2>安装方法</h2>
+            <ol>
+                <li>在 Obsidian 中打开设置</li>
+                <li>进入第三方插件设置</li>
+                <li>搜索"极简主义挑战"</li>
+                <li>点击安装并启用插件</li>
+            </ol>
+            <div class="installation-buttons">
+                <a href="https://github.com/YuriWg/obsidian-minimalism-challenge" class="github-button">GitHub 仓库</a>
+                <a href="#" class="download-button">下载插件</a>
+            </div>
+        </section>
     </div>
     <script src="demo.js"></script>
 </body>
