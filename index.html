@@ -12,9 +12,30 @@
             <h1>极简主义挑战插件</h1>
         </div>
         <div class="plugin-content">
-            <div id="pluginDemo"></div>
+            <div class="demo-container">
+                <div class="settings-panel">
+                    <div class="setting-item">
+                        <label>挑战持续时间（天）</label>
+                        <input type="number" id="duration" value="30" min="1">
+                    </div>
+                    <div class="setting-item">
+                        <label>物品数量限制</label>
+                        <input type="number" id="itemLimit" value="100" min="1">
+                    </div>
+                    <button id="startChallenge">开始挑战</button>
+                </div>
+                <div class="challenge-status">
+                    <span id="status">未开始</span>
+                    <span id="timer"></span>
+                </div>
+                <div class="items-list">
+                    <input type="text" id="newItem" placeholder="添加新物品">
+                    <button id="addItem">添加</button>
+                    <ul id="itemsList"></ul>
+                </div>
+            </div>
         </div>
     </div>
-    <script src="plugin/main.js"></script>
+    <script src="demo.js"></script>
 </body>
 </html>

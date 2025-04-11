@@ -13,13 +13,80 @@ body {
 }
 
 .plugin-showcase {
-    max-width: 1200px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
 .plugin-header {
     text-align: center;
     margin-bottom: 40px;
+}
+
+.demo-container {
+    background: #282828;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.settings-panel {
+    margin-bottom: 20px;
+}
+
+.setting-item {
+    margin-bottom: 15px;
+}
+
+.setting-item label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="number"],
+input[type="text"] {
+    background: #333;
+    border: 1px solid #444;
+    color: var(--text-normal);
+    padding: 8px;
+    border-radius: 4px;
+    width: 200px;
+}
+
+button {
+    background: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.challenge-status {
+    margin: 20px 0;
+    padding: 10px;
+    background: #333;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.items-list {
+    margin-top: 20px;
+}
+
+#itemsList {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#itemsList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    background: #333;
+    margin-bottom: 5px;
+    border-radius: 4px;
 }
 
 .plugin-sections {
