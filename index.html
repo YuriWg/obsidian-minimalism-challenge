@@ -7,40 +7,47 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="obsidian-container">
-        <div class="sidebar">
-            <div class="plugin-header">
-                <h2>极简主义挑战</h2>
-            </div>
-            <div class="settings-panel">
-                <div class="setting-item">
-                    <label>挑战持续时间（天）</label>
-                    <input type="number" id="duration" value="30" min="1" max="365">
-                </div>
-                <div class="setting-item">
-                    <label>物品数量限制</label>
-                    <input type="number" id="itemLimit" value="100" min="1" max="1000">
-                </div>
-                <button id="startChallenge" class="primary-btn">开始挑战</button>
-            </div>
+    <div class="plugin-showcase">
+        <div class="plugin-header">
+            <h1>极简主义挑战插件</h1>
+            <div class="plugin-version">版本 1.0.0</div>
         </div>
-        <div class="main-content">
-            <div class="status-bar">
-                <span id="challengeStatus">未开始挑战</span>
-                <span id="timer"></span>
-            </div>
-            <div class="items-container">
-                <h3>物品清单</h3>
-                <div class="item-list">
-                    <div class="item-input">
-                        <input type="text" id="newItem" placeholder="添加新物品">
-                        <button id="addItem">添加</button>
-                    </div>
-                    <ul id="itemsList"></ul>
+
+        <div class="plugin-sections">
+            <!-- 插件演示区 -->
+            <section class="demo-section">
+                <h2>插件演示</h2>
+                <div class="obsidian-preview">
+                    <iframe src="demo/index.html" frameborder="0"></iframe>
                 </div>
-            </div>
+            </section>
+
+            <!-- 源码展示区 -->
+            <section class="code-section">
+                <h2>源代码</h2>
+                <div class="code-tabs">
+                    <button class="tab-btn active" data-file="main">main.js</button>
+                    <button class="tab-btn" data-file="manifest">manifest.json</button>
+                </div>
+                <div class="code-content">
+                    <pre id="codeDisplay"></pre>
+                </div>
+            </section>
+
+            <!-- 安装说明 -->
+            <section class="install-section">
+                <h2>安装方法</h2>
+                <ol>
+                    <li>下载最新版本的插件文件</li>
+                    <li>将文件复制到你的 Obsidian vault 的插件目录</li>
+                    <li>在 Obsidian 设置中启用插件</li>
+                </ol>
+                <div class="download-btn">
+                    <a href="dist/main.js" download>下载插件</a>
+                </div>
+            </section>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script src="showcase.js"></script>
 </body>
 </html>
